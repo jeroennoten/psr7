@@ -2,6 +2,7 @@
 
 namespace GuzzleHttp\Psr7;
 
+use AllowDynamicProperties;
 use Psr\Http\Message\StreamInterface;
 
 /**
@@ -10,6 +11,7 @@ use Psr\Http\Message\StreamInterface;
  *
  * @final
  */
+#[AllowDynamicProperties]
 class MultipartStream implements StreamInterface
 {
     use StreamDecoratorTrait;
